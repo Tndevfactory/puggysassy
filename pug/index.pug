@@ -1,0 +1,14 @@
+doctype html
+//-  pug --watch pug -o . -P
+//- sass --watch sass\style.sass css\style.css --style=expanded
+html
+    head
+        title include in pug 
+        link(href='./css/style.css', rel='stylesheet')
+    body
+        include inc/_test.pug
+        h1 company name rrr
+        nav
+            a(href="index.html") Home
+            a(href="about.html") About us
+            a(href="contact.html") Contact us
